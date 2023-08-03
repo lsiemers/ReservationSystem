@@ -41,11 +41,15 @@ Partial Class Form1
         lblSpots = New Label()
         lstOpenSpots = New ListBox()
         lblOpenspots = New Label()
+        DateTimePicker1 = New DateTimePicker()
+        DateTimePicker2 = New DateTimePicker()
+        lblArriveDate = New Label()
+        lblDepartureDate = New Label()
         SuspendLayout()
         ' 
         ' btnSearch
         ' 
-        btnSearch.Location = New Point(12, 277)
+        btnSearch.Location = New Point(12, 406)
         btnSearch.Name = "btnSearch"
         btnSearch.Size = New Size(232, 32)
         btnSearch.TabIndex = 0
@@ -214,11 +218,47 @@ Partial Class Form1
         lblOpenspots.TabIndex = 18
         lblOpenspots.Text = "Open Spots:"
         ' 
+        ' DateTimePicker1
+        ' 
+        DateTimePicker1.Location = New Point(12, 279)
+        DateTimePicker1.Name = "DateTimePicker1"
+        DateTimePicker1.Size = New Size(200, 23)
+        DateTimePicker1.TabIndex = 19
+        ' 
+        ' DateTimePicker2
+        ' 
+        DateTimePicker2.Location = New Point(10, 328)
+        DateTimePicker2.Name = "DateTimePicker2"
+        DateTimePicker2.Size = New Size(200, 23)
+        DateTimePicker2.TabIndex = 20
+        ' 
+        ' lblArriveDate
+        ' 
+        lblArriveDate.AutoSize = True
+        lblArriveDate.Location = New Point(23, 261)
+        lblArriveDate.Name = "lblArriveDate"
+        lblArriveDate.Size = New Size(71, 15)
+        lblArriveDate.TabIndex = 21
+        lblArriveDate.Text = "Arrival Date:"
+        ' 
+        ' lblDepartureDate
+        ' 
+        lblDepartureDate.AutoSize = True
+        lblDepartureDate.Location = New Point(22, 310)
+        lblDepartureDate.Name = "lblDepartureDate"
+        lblDepartureDate.Size = New Size(89, 15)
+        lblDepartureDate.TabIndex = 22
+        lblDepartureDate.Text = "Departure Date:"
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(lblDepartureDate)
+        Controls.Add(lblArriveDate)
+        Controls.Add(DateTimePicker2)
+        Controls.Add(DateTimePicker1)
         Controls.Add(lblOpenspots)
         Controls.Add(lstOpenSpots)
         Controls.Add(lblSpots)
@@ -263,4 +303,8 @@ Partial Class Form1
     Friend WithEvents lblSpots As Label
     Friend WithEvents lstOpenSpots As ListBox
     Friend WithEvents lblOpenspots As Label
+    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents DateTimePicker2 As DateTimePicker
+    Friend WithEvents lblArriveDate As Label
+    Friend WithEvents lblDepartureDate As Label
 End Class
