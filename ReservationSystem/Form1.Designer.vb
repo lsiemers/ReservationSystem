@@ -41,8 +41,8 @@ Partial Class Form1
         lblSpots = New Label()
         lstOpenSpots = New ListBox()
         lblOpenspots = New Label()
-        DateTimePicker1 = New DateTimePicker()
-        DateTimePicker2 = New DateTimePicker()
+        dtpArrival = New DateTimePicker()
+        dtpDeparture = New DateTimePicker()
         lblArriveDate = New Label()
         lblDepartureDate = New Label()
         SuspendLayout()
@@ -218,19 +218,19 @@ Partial Class Form1
         lblOpenspots.TabIndex = 18
         lblOpenspots.Text = "Open Spots:"
         ' 
-        ' DateTimePicker1
+        ' dtpArrival
         ' 
-        DateTimePicker1.Location = New Point(12, 279)
-        DateTimePicker1.Name = "DateTimePicker1"
-        DateTimePicker1.Size = New Size(200, 23)
-        DateTimePicker1.TabIndex = 19
+        dtpArrival.Location = New Point(12, 279)
+        dtpArrival.Name = "dtpArrival"
+        dtpArrival.Size = New Size(200, 23)
+        dtpArrival.TabIndex = 19
         ' 
-        ' DateTimePicker2
+        ' dtpDeparture
         ' 
-        DateTimePicker2.Location = New Point(10, 328)
-        DateTimePicker2.Name = "DateTimePicker2"
-        DateTimePicker2.Size = New Size(200, 23)
-        DateTimePicker2.TabIndex = 20
+        dtpDeparture.Location = New Point(10, 328)
+        dtpDeparture.Name = "dtpDeparture"
+        dtpDeparture.Size = New Size(200, 23)
+        dtpDeparture.TabIndex = 20
         ' 
         ' lblArriveDate
         ' 
@@ -257,8 +257,8 @@ Partial Class Form1
         ClientSize = New Size(800, 450)
         Controls.Add(lblDepartureDate)
         Controls.Add(lblArriveDate)
-        Controls.Add(DateTimePicker2)
-        Controls.Add(DateTimePicker1)
+        Controls.Add(dtpDeparture)
+        Controls.Add(dtpArrival)
         Controls.Add(lblOpenspots)
         Controls.Add(lstOpenSpots)
         Controls.Add(lblSpots)
@@ -303,8 +303,8 @@ Partial Class Form1
     Friend WithEvents lblSpots As Label
     Friend WithEvents lstOpenSpots As ListBox
     Friend WithEvents lblOpenspots As Label
-    Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents DateTimePicker2 As DateTimePicker
+    Friend WithEvents dtpArrival As DateTimePicker
+    Friend WithEvents dtpDeparture As DateTimePicker
     Friend WithEvents lblArriveDate As Label
     Friend WithEvents lblDepartureDate As Label
 End Class
