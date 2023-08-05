@@ -30,10 +30,10 @@ Partial Class Form1
         txtLastName = New TextBox()
         txtPhoneNumber = New TextBox()
         lblPhoneNumber = New Label()
-        optTravelTrailer = New RadioButton()
-        optMotorhome = New RadioButton()
-        opt5thWheel = New RadioButton()
-        optTent = New RadioButton()
+        radTravelTrailer = New RadioButton()
+        radMotorhome = New RadioButton()
+        rad5thWheel = New RadioButton()
+        radTent = New RadioButton()
         lblSize = New Label()
         txtSize = New TextBox()
         lblFeet = New Label()
@@ -113,49 +113,49 @@ Partial Class Form1
         lblPhoneNumber.TabIndex = 7
         lblPhoneNumber.Text = "Phone Number:"
         ' 
-        ' optTravelTrailer
+        ' radTravelTrailer
         ' 
-        optTravelTrailer.AutoSize = True
-        optTravelTrailer.Location = New Point(23, 148)
-        optTravelTrailer.Name = "optTravelTrailer"
-        optTravelTrailer.Size = New Size(89, 19)
-        optTravelTrailer.TabIndex = 8
-        optTravelTrailer.TabStop = True
-        optTravelTrailer.Text = "Travel Trailer"
-        optTravelTrailer.UseVisualStyleBackColor = True
+        radTravelTrailer.AutoSize = True
+        radTravelTrailer.Location = New Point(23, 148)
+        radTravelTrailer.Name = "radTravelTrailer"
+        radTravelTrailer.Size = New Size(89, 19)
+        radTravelTrailer.TabIndex = 8
+        radTravelTrailer.TabStop = True
+        radTravelTrailer.Text = "Travel Trailer"
+        radTravelTrailer.UseVisualStyleBackColor = True
         ' 
-        ' optMotorhome
+        ' radMotorhome
         ' 
-        optMotorhome.AutoSize = True
-        optMotorhome.Location = New Point(144, 148)
-        optMotorhome.Name = "optMotorhome"
-        optMotorhome.Size = New Size(89, 19)
-        optMotorhome.TabIndex = 9
-        optMotorhome.TabStop = True
-        optMotorhome.Text = "Motorhome"
-        optMotorhome.UseVisualStyleBackColor = True
+        radMotorhome.AutoSize = True
+        radMotorhome.Location = New Point(144, 148)
+        radMotorhome.Name = "radMotorhome"
+        radMotorhome.Size = New Size(89, 19)
+        radMotorhome.TabIndex = 9
+        radMotorhome.TabStop = True
+        radMotorhome.Text = "Motorhome"
+        radMotorhome.UseVisualStyleBackColor = True
         ' 
-        ' opt5thWheel
+        ' rad5thWheel
         ' 
-        opt5thWheel.AutoSize = True
-        opt5thWheel.Location = New Point(23, 173)
-        opt5thWheel.Name = "opt5thWheel"
-        opt5thWheel.Size = New Size(78, 19)
-        opt5thWheel.TabIndex = 10
-        opt5thWheel.TabStop = True
-        opt5thWheel.Text = "5th Wheel"
-        opt5thWheel.UseVisualStyleBackColor = True
+        rad5thWheel.AutoSize = True
+        rad5thWheel.Location = New Point(23, 173)
+        rad5thWheel.Name = "rad5thWheel"
+        rad5thWheel.Size = New Size(78, 19)
+        rad5thWheel.TabIndex = 10
+        rad5thWheel.TabStop = True
+        rad5thWheel.Text = "5th Wheel"
+        rad5thWheel.UseVisualStyleBackColor = True
         ' 
-        ' optTent
+        ' radTent
         ' 
-        optTent.AutoSize = True
-        optTent.Location = New Point(144, 173)
-        optTent.Name = "optTent"
-        optTent.Size = New Size(47, 19)
-        optTent.TabIndex = 11
-        optTent.TabStop = True
-        optTent.Text = "Tent"
-        optTent.UseVisualStyleBackColor = True
+        radTent.AutoSize = True
+        radTent.Location = New Point(144, 173)
+        radTent.Name = "radTent"
+        radTent.Size = New Size(47, 19)
+        radTent.TabIndex = 11
+        radTent.TabStop = True
+        radTent.Text = "Tent"
+        radTent.UseVisualStyleBackColor = True
         ' 
         ' lblSize
         ' 
@@ -266,10 +266,10 @@ Partial Class Form1
         Controls.Add(lblFeet)
         Controls.Add(txtSize)
         Controls.Add(lblSize)
-        Controls.Add(optTent)
-        Controls.Add(opt5thWheel)
-        Controls.Add(optMotorhome)
-        Controls.Add(optTravelTrailer)
+        Controls.Add(radTent)
+        Controls.Add(rad5thWheel)
+        Controls.Add(radMotorhome)
+        Controls.Add(radTravelTrailer)
         Controls.Add(lblPhoneNumber)
         Controls.Add(txtPhoneNumber)
         Controls.Add(txtLastName)
@@ -292,10 +292,10 @@ Partial Class Form1
     Friend WithEvents txtLastName As TextBox
     Friend WithEvents txtPhoneNumber As TextBox
     Friend WithEvents lblPhoneNumber As Label
-    Friend WithEvents optTravelTrailer As RadioButton
-    Friend WithEvents optMotorhome As RadioButton
-    Friend WithEvents opt5thWheel As RadioButton
-    Friend WithEvents optTent As RadioButton
+    Friend WithEvents radTravelTrailer As RadioButton
+    Friend WithEvents radMotorhome As RadioButton
+    Friend WithEvents rad5thWheel As RadioButton
+    Friend WithEvents radTent As RadioButton
     Friend WithEvents lblSize As Label
     Friend WithEvents txtSize As TextBox
     Friend WithEvents lblFeet As Label
